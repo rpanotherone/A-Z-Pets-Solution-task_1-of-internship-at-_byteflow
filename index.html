@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petshop</title>
+    <link rel="styleSheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Autour+One&family=Merriweather:wght@300&display=swap"
+        rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <!-- header par includin(nevbar, search bar, car and user) -->
+    <div id="header">
+        <!-- nevbar -->
+        <div id="nevBar">
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <div id="headerSection2">
+            <!-- searchBar -->
+            <div id="searchBar">
+                <input type="text" name="Search" placeholder="Search Product">
+                <button id="searchButton" onclick="performSearch()">Search</button>
+            </div>
+            <!-- cart -->
+            <div id="cart" onclick="addToCart()">
+                <img src="image/shopping-cart.png" alt="Cart">
+            </div>
+        </div>
+        <!-- user -->
+        <div id="user">
+            <img src="image/boy.png" alt="U">
+        </div>
+    </div>
+
+    <!-- body part which include(title content, slider, product heading, and products) -->
+    <div id="body">
+        <!-- title content -->
+        <div id="content">
+            <h1>A-Z Pets Solution</h1>
+            <h3>Bringing Joy to Every Pet and Their Loving Owners!</h3>
+        </div>
+        <!-- slider -->
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide"><img src="image/Image1.jpg" alt="Image 1"></div>
+                <div class="slide"><img src="image/Image2.jpg" alt="Image 2"></div>
+                <div class="slide"><img src="image/Image3.jpg" alt="Image 3"></div>
+                <div class="slide"><img src="image/Image4.jpg" alt="Image 3"></div>
+            </div>
+
+        </div>
+        <!-- products -->
+        <div id="products">
+            <!-- product cetegory 1-->
+            <div class="category">
+                <h1>Pets Etables</h1>
+            </div>
+            <!-- products of cetegory 1 -->
+            <div class="boxes">
+
+                <div class="box">
+                    <img src="image/products/7.jpg" alt="Loading...">
+                    <div class="details">
+                        <h5 name="itemName">Whole Paws, Whole Paws, Indoor Cat Grain Free Chicken Recipe, 56 Ounce</h5>
+                        <h2 name="price">Price: $11.9</h2>
+                    </div>
+                    <div class="actions">
+                        <button id="addToCart">Add to cart</button>
+                        <button id="buy">Buy</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="image/products/8.webp" alt="Loading...">
+                    <div class="details">
+                        <h5 name="itemName">Purina Fancy Feast Gravy Wet Cat Food Variety Pack, Delights With Cheddar
+                            Grilled Collection - (24) 3 oz. Cans</h5>
+                        <h2 name="price">Price: $25.99</h2>
+                    </div>
+                    <div class="actions">
+                        <button id="addToCart">Add to cart</button>
+                        <button id="buy">Buy</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="image/products/9.jpg" alt="Loading...">
+                    <div class="details">
+                        <h5 name="itemName">JanYoo Rabbit Accessories Chinchilla Food Bowl and Water Bowls Feeding
+                            Ceramic Set for Bunnies Cage Blue Grey (2 Pack)</h5>
+                        <h2 name="price">Price: $19.99</h2>
+                    </div>
+                    <div class="actions">
+                        <button id="addToCart">Add to cart</button>
+                        <button id="buy">Buy</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="image/products/10.webp" alt="Loading...">
+                    <div class="details">
+                        <h5 name="itemName">Blue Seal Orange Suet Cake | No Mess Wild Bird Suet | 11 oz (12 Pack)</h5>
+                        <h2 name="price">Price: $34.99</h2>
+                    </div>
+                    <div class="actions">
+                        <button id="addToCart">Add to cart</button>
+                        <button id="buy">Buy</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="image/products/11.jpg" alt="Loading...">
+                    <div class="details">
+                        <h5 name="itemName">Xtreme Nano Fish Food - 0.5mm Sinking Pellets</h5>
+                        <h2 name="price">Price: $16.99</h2>
+                    </div>
+                    <div class="actions">
+                        <button id="addToCart">Add to cart</button>
+                        <button id="buy">Buy</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="image/products/12.jpg" alt="Loading...">
+                    <div class="details">
+                        <h5 name="itemName">Rachael Ray Nutrish Premium Natural Dry Dog Food</h5>
+                        <h2 name="price">Price: $72.99</h2>
+                    </div>
+                    <div class="actions">
+                        <button id="addToCart">Add to cart</button>
+                        <button id="buy">Buy</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="image/products/13.webp" alt="Loading...">
+                    <div class="details">
+                        <h5 name="itemName">Hill's Science Diet Wet Dog Food</h5>
+                        <h2 name="price">Price: $24.49</h2>
+                    </div>
+                    <div class="actions">
+                        <button id="addToCart">Add to cart</button>
+                        <button id="buy">Buy</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- product category 2 -->
+            <div class="category">
+                <h1>Pets Grooming</h1>
+            </div>
+            
+            <!-- products of category 2 -->
+            <div class="boxes">
+                <div class="box">
+                    <img src="image/products/14.jpg" alt="Loading...">
+                    <div class="details">
+                        <h5 name="itemName">Afloia Dog Grooming Kit</h5>
+                        <h2 name="price">Price: $126.99</h2>
+                    </div>
+                    <div class="actions">
+                        <button id="addToCart">Add to cart</button>
+                        <button id="buy">Buy</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="image/products/15.webp" alt="Loading...">
+                    <div class="details">
+                        <h5 name="itemName">Bunfly Dog Grooming Kit</h5>
+                        <h2 name="price">Price: $109.99</h2>
+                    </div>
+                    <div class="actions">
+                        <button id="addToCart">Add to cart</button>
+                        <button id="buy">Buy</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="image/products/16.jpg" alt="Loading...">
+                    <div class="details">
+                        <h5 name="itemName">Bird Nail Clipper Grooming Tool</h5>
+                        <h2 name="price">Price: $5.73</h2>
+                    </div>
+                    <div class="actions">
+                        <button id="addToCart">Add to cart</button>
+                        <button id="buy">Buy</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="image/products/3.webp" alt="Loading...">
+                    <div class="details">
+                        <h5 name="itemName">AGESISI H-Shape Dog Grooming Arm with Clamp</h5>
+                        <h2 name="price">Price: $44.99</h2>
+                    </div>
+                    <div class="actions">
+                        <button id="addToCart">Add to cart</button>
+                        <button id="buy">Buy</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="image/products/4.jpg" alt="Loading...">
+                    <div class="details">
+                        <h5 name="itemName">AGESISI H-Shape Dog Grooming Arm with Clamp</h5>
+                        <h2 name="price">Price: $34.99</h2>
+                    </div>
+                    <div class="actions">
+                        <button id="addToCart">Add to cart</button>
+                        <button id="buy">Buy</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="image/products/19.webp" alt="Loading...">
+                    <div class="details">
+                        <h5 name="itemName">fashionhike Dog Bath Pet cleaning Supplies Pet Glove</h5>
+                        <h2 name="price">Price: $2.99</h2>
+                    </div>
+                    <div class="actions">
+                        <button id="addToCart">Add to cart</button>
+                        <button id="buy">Buy</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- products category 3 -->
+            <div class="category">
+                <h1>Others</h1>
+            </div>
+            
+            <!-- products of category 4 -->
+            <div class="boxes">
+                <div class="box">
+                    <img src="image/products/1.jpg" alt="Loading...">
+                    <div class="details">
+                        <h5 name="itemName">Havniva Ceramics Raised Dog Bowl with Non-Slip Stand Elevated</h5>
+                        <h2 name="price">Price: $39.99</h2>
+                    </div>
+                    <div class="actions">
+                        <button id="addToCart">Add to cart</button>
+                        <button id="buy">Buy</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="image/products/2.jpg" alt="Loading...">
+                    <div class="details">
+                        <h5 name="itemName">Casual Home Wooden</h5>
+                        <h2 name="price">Price: $34.99</h2>
+                    </div>
+                    <div class="actions">
+                        <button id="addToCart">Add to cart</button>
+                        <button id="buy">Buy</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="image/products/5.webp" alt="Loading...">
+                    <div class="details">
+                        <h5 name="itemName">Ceramic Raised Cat Food and Water Bowls Set</h5>
+                        <h2 name="price">Price: $22.99</h2>
+                    </div>
+                    <div class="actions">
+                        <button id="addToCart">Add to cart</button>
+                        <button id="buy">Buy</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="image/products/6.webp" alt="Loading...">
+                    <div class="details">
+                        <h5 name="itemName">Jelly Pet Safety Dog Tether</h5>
+                        <h2 name="price">Price: $27.99</h2>
+                    </div>
+                    <div class="actions">
+                        <button id="addToCart">Add to cart</button>
+                        <button id="buy">Buy</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="image/products/17.webp" alt="Loading...">
+                    <div class="details">
+                        <h5 name="itemName">Wooden Bird House for Outside</h5>
+                        <h2 name="price">Price: $21.99</h2>
+                    </div>
+                    <div class="actions">
+                        <button id="addToCart">Add to cart</button>
+                        <button id="buy">Buy</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="image/products/18.webp" alt="Loading...">
+                    <div class="details">
+                        <h5 name="itemName">Bird House for Outside</h5>
+                        <h2 name="price">Price: $2.99</h2>
+                    </div>
+                    <div class="actions">
+                        <button id="addToCart">Add to cart</button>
+                        <button id="buy">Buy</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- footer section which includes(about, contact) -->
+    <div id="footer">
+        <div id="about">
+            <h2>About</h2>
+            <p>This website is created solely for educational purposes. All images and product details displayed on this
+                website are sourced from various locations on the internet, and the creator of this website claims
+                ownership and responsibility only for the design and development aspects of the site. No copyright
+                infringement is intended. If you believe that any content on this website violates your copyright or
+                intellectual property rights, please contact us immediately for resolution.
+            </p>
+        </div>
+        <div id="contact">
+            <h2>Contact</h2>
+            <ul>linkedin: <a href="https://www.linkedin.com/in/rahul-prajapati-b711741ba/">Rahul Prajapati</a></ul>
+            <ul>&#9993 rahulprajapati18062000@gmail.com </ul>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,329 @@
+/*CSS for whole document*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Autour One', cursive;
+    font-family: 'Merriweather', serif;
+}
+
+/* ------------------------section - 1 : Header------------------------------------ */
+/* css for header div which contains (nevbar, search and user) */
+#header {
+    height: auto;
+    width: 100%;
+    background-color: #b5daff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 10px;
+    position: fixed;
+    z-index: 3;
+}
+
+/* adjusting nevbar div into flex type */
+#nevBar.show-menu {
+    display: flex;
+}
+
+/* nevbar alignment */
+#nevBar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 25rem;
+}
+
+/* nevar items adujstment and styling */
+#nevBar a {
+    margin: 1rem;
+    width: 5rem;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    font: icon;
+    font-size: medium;
+}
+
+/* secrch section styling */
+#headerSection2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 45%;
+    padding-right: 10%;
+}
+
+/* searchbar decoration and adjustment */
+#searchBar {
+    flex-grow: 1;
+    flex-shrink: 1;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* input form styling */
+#searchBar input {
+    margin: auto;
+    height: 2rem;
+    width: 70%;
+}
+
+/* search button styling */
+#searchButton {
+    margin: auto;
+    height: 2rem;
+    width: 25%;
+    cursor: pointer;
+}
+
+/* cart icon styling */
+#cart {
+    flex-grow: 1;
+    flex-shrink: 1;
+    max-width: 100%;
+    margin-left: 10%;
+}
+
+/* cart icon size adjustment  */
+#cart img {
+    height: 2rem;
+    width: 2rem;
+}
+
+/* user icon slyling */
+#user {
+    padding: 0;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* size adjustment of user icon */
+#user img {
+    height: 3rem;
+    width: 3rem;
+    padding: 0.35rem;
+    border-radius: 30px;
+}
+
+
+/* -------------------------------------Section 2 : body-------------------------------------- */
+
+/* Slider container */
+.slider-container {
+    width: 100%;
+    overflow: clip;
+    margin: 0;
+    padding-top: 3rem;
+}
+
+/* Slider */
+.slider {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+/* Slide */
+.slide {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 10px;
+}
+
+/* Slide images */
+.slide img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* title content styling */
+#content {
+    margin-top: 5%;
+    padding: 5%;
+    font-size: large;
+    position: absolute;
+    z-index: 2;
+}
+
+/* content text decoration */
+#content h1 {
+    font-size: 36px;
+    color: rgb(53, 123, 123);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#content h3 {
+    font-size: 24px;
+    color: #5c5b5b;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* styling for category heading of products */
+.category {
+    border: 2px double rgb(153, 202, 215);
+    width: 100%;
+    background-color: #b5daff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.category h1 {
+    color: #333;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.2);
+    margin-left: 4.2%;
+}
+
+/* BOXES */
+/* Style for the container of all boxes in #body section*/
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5%;
+    justify-content: space-between;
+}
+
+/* box styling and adjusment */
+.box {
+    flex: 0 1 calc(33.33% - 20px);
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff(255, 0, 0, 0.3);
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px double #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* size adustment of images inside the boxes */
+.box img {
+    max-width: 100%;
+    height: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Styleing button inside the boxes */
+.box button {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid rgba(230, 230, 230, 0.865);
+    border-radius: 7px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* Style for button hover effect */
+.box button:hover {
+    background-color: #555;
+}
+
+/* align text in boxes */
+.details {
+    text-align: center;
+}
+
+/*align buttons in boxes */
+.actions {
+    text-align: center;
+}
+
+
+
+/* -----------------------------------------Section - 3 : footer------------------------------ */
+#footer {
+    background: #313131;
+    color: #ddd;
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+}
+
+/* box adjustment in footer  */
+#footer div {
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+}
+
+/* contact styling */
+#contact a {
+    text-decoration: none;
+    color: rgb(146, 188, 247);
+}
+
+
+
+/* Media queries for responsive design */
+/* Adjust styles for screens up to 810px wide*/
+@media screen and (max-width: 810px) {
+
+    #headerSection2 {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+    }
+
+    #searchBar {
+        flex-grow: 1;
+        flex-shrink: 1;
+        max-width: 100%;
+        display: flex;
+        padding-left: 5%;
+        padding-right: 5%;
+        justify-content: center;
+    }
+
+    #cart {
+        flex-grow: 1;
+        flex-shrink: 1;
+        max-width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+        position: absolute;
+        right: 0;
+    }
+
+    .box {
+        flex: 0 1 calc(50% - 20px);
+        height: auto;
+    }
+}
+
+/* Adjust styles for screens up to 440px wide */
+@media screen and (max-width: 440px) {
+
+    #nevBar {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 25rem;
+    }
+
+    #nevBar a {
+        margin-left: 1%;
+        margin-right: 1%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        padding: auto;
+        width: 20%;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    #headersection2 {
+        padding: 2%;
+    }
+
+    .box {
+        flex: 0 0 calc(100% - 20px);
+        height: auto;
+    }
+}
