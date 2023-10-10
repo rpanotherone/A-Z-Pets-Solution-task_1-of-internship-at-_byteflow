@@ -152,13 +152,11 @@
 
 /* content text decoration */
 #content h1 {
-    font-size: 36px;
     color: rgb(53, 123, 123);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 #content h3 {
-    font-size: 24px;
     color: #5c5b5b;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
@@ -295,6 +293,15 @@
         flex: 0 1 calc(50% - 20px);
         height: auto;
     }
+
+    #content{
+        margin-top: 10%;
+        font-size: medium;
+    }
+    
+    .slider-container {
+        padding-top: 10%;
+    }
 }
 
 /* Adjust styles for screens up to 440px wide */
@@ -325,5 +332,14 @@
     .box {
         flex: 0 0 calc(100% - 20px);
         height: auto;
+    }
+    
+    .slider-container {
+        padding-top: 20%;
+    }
+
+    #content{
+        margin-top: 20%;
+        font-size: small;
     }
 }
